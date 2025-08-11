@@ -12,8 +12,8 @@ const puppeteer = require('puppeteer');
   await page.goto('https://aternos.org/login/');
 
   // 輸入帳號密碼並登入 (請改成你的帳密)
-  await page.type('#username', '你的帳號');
-  await page.type('#password', '你的密碼');
+  await page.type('#username', '603good');
+  await page.type('#password', '603good');
   await Promise.all([
     page.click('button[type="submit"]'),
     page.waitForNavigation({ waitUntil: 'networkidle0' }),
